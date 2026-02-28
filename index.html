@@ -1,109 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <style>
-    body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-        margin: 0;
-        padding: 0;
-        background-color: #f0f8ff;
-        color: #333;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muhammad Shoaib | Shoaib Maths Online Tuition</title>
 
-    header {
-        background-color: #007bff;
-        color: white;
-        padding: 30px 20px;
-        text-align: center;
-    }
+<meta name="description" content="Muhammad Shoaib - Experienced Mathematics teacher providing online tuition, free notes, and tuition registration.">
+<meta name="keywords" content="Shoaib Maths, Muhammad Shoaib, Maths Tuition, Online Maths Teacher, Abbottabad">
+<meta name="robots" content="index, follow">
 
-    header h1 {
-        margin: 0;
-        font-size: 2em;
-    }
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f1eb;
+}
 
-    header p {
-        font-size: 1.2em;
-    }
+/* Sidebar */
+.sidebar {
+    height: 100vh;
+    width: 230px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #2b1d14;
+    padding-top: 20px;
+}
 
-    section {
-        padding: 20px;
-        margin: 10px auto;
-        max-width: 800px;
-        background-color: white;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
+.sidebar button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background-color: #3e2723;
+    color: white;
+    text-align: left;
+    font-size: 16px;
+    cursor: pointer;
+    border-bottom: 1px solid #4e342e;
+}
 
-    h2 {
-        color: #007bff;
-    }
+.sidebar button:hover {
+    background-color: #5d4037;
+}
 
-    a.button {
-        background-color: #007bff;
-        color: white;
-        padding: 10px 20px;
-        text-decoration: none;
-        border-radius: 5px;
-        font-weight: bold;
-        display: inline-block;
-    }
+/* Main Content */
+.content {
+    margin-left: 250px;
+    padding: 40px;
+}
 
-    footer {
-        text-align: center;
-        padding: 15px;
-        background-color: #333;
-        color: white;
-        margin-top: 20px;
-    }
+/* Sections */
+.section {
+    display: none;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.active {
+    display: block;
+}
+
+h1, h2 {
+    color: #3e2723;
+}
+
+.register-btn {
+    background-color: #3e2723;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.register-btn:hover {
+    background-color: #5d4037;
+}
+
+footer {
+    margin-top: 30px;
+    text-align: center;
+    color: #555;
+}
 </style>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muhammad Shoaib | Shoaib Maths Online Tuition</title>
-    <meta name="description" content="Muhammad Shoaib - Experienced Mathematics teacher providing online tuition, free notes, and tuition registration for Middle, Matric, and FSC students.">
-    <meta name="keywords" content="Shoaib Maths, Muhammad Shoaib, Maths Tuition, Online Maths Teacher, Abbottabad, Matric Maths, FSC Maths, Online Tuition">
-    <meta name="robots" content="index, follow">
+
+<script>
+function showSection(id) {
+    var sections = document.getElementsByClassName("section");
+    for (var i = 0; i < sections.length; i++) {
+        sections[i].classList.remove("active");
+    }
+    document.getElementById(id).classList.add("active");
+}
+</script>
+
 </head>
 <body>
-    <header>
-        <h1>MathswithShoaib</h1>
-        <p>Mathematics notes and tutoring | Middle, Matric, FSC | Pakistan</p>
-    </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! I am <strong>Muhammad Shoaib</strong>, MPhil in Applied Mathematics. I provide online tuition, free notes, and help students excel in mathematics.</p>
-    </section>
+<div class="sidebar">
+    <button onclick="showSection('home')">Home</button>
+    <button onclick="showSection('about')">About Me</button>
+    <button onclick="showSection('registration')">Register</button>
+    <button onclick="showSection('notes')">Free Notes</button>
+    <button onclick="showSection('contact')">Contact</button>
+</div>
 
-    <section id="registration">
-        <h2>Register for Online Tuition</h2>
-        <p>Click below to register and secure your spot in my online classes:</p>
-<p>
-  <a href="https://forms.gle/Lv7c2TNfFgT5pQRk9" target="_blank" style="
-      background-color: #007bff; 
-      color: white; 
-      padding: 10px 20px; 
-      text-decoration: none; 
-      border-radius: 5px;
-      font-weight: bold;
-      display: inline-block;
-  ">Register Here</a>
-</p>    </section>
+<div class="content">
 
-    <section id="notes">
-        <h2>Free Notes</h2>
-        <p>Download free maths notes and practice sheets for Middle, Matric, and FSC students. <em>(Coming Soon)</em></p>
-    </section>
+<div id="home" class="section active">
+    <h1>MathswithShoaib</h1>
+    <p>Mathematics Notes & Online Tutoring | Middle, Matric, FSC | Pakistan</p>
+</div>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:Shoaib911119@gmail.com">Shoaib911119@gmail.com</a></p>
-        <p>WhatsApp: <a href="https://wa.me/923053744314" target="_blank">+92 305 3744314</a></p>
-    </section>
+<div id="about" class="section">
+    <h2>About Me</h2>
+    <p>Hello! I am <strong>Muhammad Shoaib</strong>, MPhil in Applied Mathematics.</p>
+    <p>I provide online tuition, free notes, and help students excel in mathematics with strong conceptual understanding.</p>
+</div>
 
-    <footer>
-        <p>&copy; 2026 Muhammad Shoaib | Online Mathematics Tutor</p>
-    </footer>
+<div id="registration" class="section">
+    <h2>Register for Online Tuition</h2>
+    <p>Click below to register and secure your spot:</p>
+    <a href="https://forms.gle/Lv7c2TNfFgT5pQRk9" target="_blank" class="register-btn">Register Here</a>
+</div>
+
+<div id="notes" class="section">
+    <h2>Free Notes</h2>
+    <p>Download free maths notes and practice sheets for Middle, Matric, and FSC students.</p>
+    <p><em>Coming Soon...</em></p>
+</div>
+
+<div id="contact" class="section">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:Shoaib911119@gmail.com">Shoaib911119@gmail.com</a></p>
+    <p>WhatsApp: <a href="https://wa.me/923053744314" target="_blank">+92 305 3744314</a></p>
+</div>
+
+<footer>
+    <p>&copy; 2026 Muhammad Shoaib | Online Mathematics Tutor</p>
+</footer>
+
+</div>
+
 </body>
 </html>
